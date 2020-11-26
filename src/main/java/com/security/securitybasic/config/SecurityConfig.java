@@ -25,7 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin(config -> {
                     config.loginPage("/login")
 //                            .successForwardUrl("/")   // requestCache
-                            .failureForwardUrl("/login?error=trur");
+                            .failureForwardUrl("/login?error=true");
 
                 })
                 .authorizeRequests(config->{
